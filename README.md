@@ -2,7 +2,7 @@
 
 ./bin/run [COMMAND]
 
-COMMAND:
+Commands:
 
 open - opens a new OUTPACE channel
 
