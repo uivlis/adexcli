@@ -44,10 +44,7 @@ function submit(channel){
   const coreInterface = new Interface(coreABI)
 
   const open = coreInterface.functions.channelOpen.encode([ethChannel.toSolidityTuple()])
-  console.log(open)
-
-  
-
+  //TODO Send the Tx to Identity's execute()
 }
 
 class OpenCommand extends Command {
