@@ -4,13 +4,11 @@ class HelloCommand extends Command {
   async run() {
     const {flags} = this.parse(HelloCommand)
     const name = flags.name || 'world'
-    this.log(`hello ${name} from .\\src\\commands\\hello.js`)
+    this.log(`Hello ${name} from AdEx CLI!`)
   }
 }
 
-HelloCommand.description = `Describe the command here
-...
-Extra documentation goes here
+HelloCommand.description = `A welcome from the AdEx CLI.
 `
 
 HelloCommand.flags = {
